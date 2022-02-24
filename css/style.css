@@ -32,7 +32,7 @@ html {
 
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.5;
   color: var(--color-body);
 }
@@ -578,6 +578,10 @@ a {
     margin: 0 2rem;
   }
 }
+/* Sign-up Callout */
+.callout-signup {
+  transform: translateY(5rem);
+}
 
 /* Collapsibles */
 
@@ -636,7 +640,7 @@ a {
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 95%);
 }
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
@@ -808,6 +812,7 @@ a {
 /* Footer */
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 .footer a {
   color: #777;
@@ -829,6 +834,8 @@ a {
 .footer__heading {
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1.5;
 }
 .footer__brand {
   margin-top: 5rem;
@@ -847,6 +854,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    font-size: 1.5rem;
+  }
   .footer__section {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
